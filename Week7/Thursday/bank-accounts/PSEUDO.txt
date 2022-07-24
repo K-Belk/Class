@@ -1,0 +1,22 @@
+classes
+  -- Bank
+      Methods
+       instance - create_account()
+          - new accounts can not be created with a negative balance, raise        Exception
+  -- Account
+      Variables
+        instance - ID
+        instance - Balance, take in 
+      Methods
+        instance - withdraw()
+            - can not go negative outputs warning message 
+              - returns unmodified balance
+            - returns updated balance
+        instance - deposit()
+            - returns updated balance
+  -- Owner
+    Variables
+      instance - accounts
+      instance - name
+      instance - address
+      

@@ -1,0 +1,9 @@
+<h1>{{ post.title }}</h1>
+<h4>{{ post.body }}</h4>
+
+{% if comments %}
+  {% for comment in comments %}
+  <div>{{ comment.body }}</div>
+
+  {% endfor %}
+{% endif %}

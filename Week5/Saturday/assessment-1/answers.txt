@@ -1,0 +1,22 @@
+1. What is the difference between a class variable and an instance variable? What does `self.ATTRIBUTE` give you the ability to do that `ATTRIBUTE` does not?
+
+    Your answer: 
+    A class variable is the same across all instances of the class and if changed it changes for all instances. Where a instance variable is local to just that instance and doesn't interact with other instances.
+
+
+2. List and describe all the `git` commands you commonly use to create a pull request
+
+    Your answer: 'git add .' - stages files that have changed for commit
+    'git commit -m'<commit message>'' - like a save point, a place you can go back to 
+    'git push origin master' - 'git push' pushes up to your repository. 'origin master'  is where it is pushing in the repository
+
+
+3. Can you describe what recursion is? What does every recursive method need?
+
+    Your answer: calling a function from itself directly or indirectly
+
+
+4. What are Python libraries and why are they used?
+
+    Your answer: sets of functions that can be imported for use
+

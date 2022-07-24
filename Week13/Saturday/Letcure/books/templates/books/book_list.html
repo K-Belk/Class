@@ -1,0 +1,26 @@
+<h1>Books</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Pages</th>
+      <th>View</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for book in all_books %}
+    <tr>
+      <td>{{ book.title }}</td>
+      <td>{{ book.pages }}</td>
+      <td><a href="{% url 'books:book_view' book_id %}"></a>view</td>
+      <td><a href="{% url 'books:book_edit' book_id %}"></a>edit</td>
+      <td><a href="{% url 'books:book_delete' book_id %}"></a>delete</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<a href="{% url 'books:book_new' %}">New</a>

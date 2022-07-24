@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+  {% if user.is_authenticated %}
+  <a href="{% url 'meet:add_group' %}"><i class="bi bi-plus-circle-fill"></i></a>
+  {% endif %}
+  Groups
+</div>
+<ul class="list-group">
+{% for group in groups %}
+<div><a href="{% url 'meet:group_details' group.id %}">{{ group.title }}</a></div>
+{% endfor %}
+</ul>
+{% endblock %}

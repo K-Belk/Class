@@ -1,0 +1,5 @@
+Create a dictatory to hold currency names and values
+take the difference of the cost and paid to get change amount needed
+loop through the currency dictatory checking if the change amount is greater than the value, starting from most valuable currency to the lowest.
+store the amount of times the value goes into the change amount to determine how many to return.
+subtract from the change needed and continue looping till change amount == 0

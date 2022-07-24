@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <table boarder="10px">
+      <h3>User - {{ user }}</h3>
+      <div><a href="{% url 'auth:login_user/' %}">Login</a></div>
+      <div><a href="{% url 'auth:user_signup' %}">Signup</a></div>
+      <div><a href="{% url 'auth:user_logout' %}">Logout</a></div>
+      <thead>
+        <tr>
+          <th>Todo</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for todo in todos %}
+        <tr>
+          <td>{{ todo.title }}</td>
+          <td>{{ todo.description }}</td>
+          <td><a href="{% url 'todos:todo_show' todo_id=todo.id %}">View</a></td>
+          <td><a href="{% url 'todos:todo_update' todo_id=todo.id %}">Update</a></td>
+          <td><a href="{% url 'todos:todo_delete' todo_id=todo.id %}">Delete</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <script src="" async defer></script>
+  </body>
+</html>

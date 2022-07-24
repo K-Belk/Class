@@ -1,0 +1,15 @@
+{
+  "users": [
+    {"username": "Bob", "email": "bob@bobmail.com", "password": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"},
+    {"username": "Jane", "email": "jane@janemail.com", "password": "82e35a63ceba37e9646434c5dd412ea577147f1e4a41ccde1614253187e3dbf9"},
+    {"username": "Sam", "email": "sam@sammail.com", "password": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"}
+  ],
+  "posts": [
+    {"title": "My Lunch", "contents": "My lunch was great", "user_id": 1},
+    {"title": "My Breakfast", "contents": "My breakfast was great", "user_id": 1},
+    {"title": "My Brunch", "contents": "My brunch was great", "user_id": 2},
+    {"title": "My Linner", "contents": "My linner was great", "user_id": 2},
+    {"title": "My Dinner", "contents": "My dinner was great", "user_id": 2},
+    {"title": "My Supper", "contents": "My supper was great", "user_id": 3}
+  ]
+}

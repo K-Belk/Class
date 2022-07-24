@@ -1,0 +1,11 @@
+leave as a flat list
+while loop 
+tracking index
+positioning - row = index // 9, column = index%9
+check what is available at empty position and pop value to there
+then store remaining and position in a list
+
+----------back tracking ---------
+when a position that returns none available
+keep backing up till there is stored available values of a position removing them from the list and resetting to 0 in the board list
+then continue forward until the end is reached

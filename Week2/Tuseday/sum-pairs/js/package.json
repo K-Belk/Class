@@ -1,0 +1,19 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sumPairs.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "deep-equal": "^2.0.5",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "shallow-equal": "^1.2.1"
+  }
+}

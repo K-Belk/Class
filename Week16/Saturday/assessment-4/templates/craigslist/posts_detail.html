@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <h2>{{ post.category.name }}</h2>
+</div>
+<div class="card w-50 ms-3">
+  <div><h5>{{ post.title }}</h5></div>
+  <div>{{ post.description }}</div>
+</div>
+
+<div class="w-25 ms-3">
+  <a href="{% url 'update_post' post.category.id post.id %}"><i class="bi bi-pencil-square"></i></a>
+</div>
+
+
+{% endblock %}

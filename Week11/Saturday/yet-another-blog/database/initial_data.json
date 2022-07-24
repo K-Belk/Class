@@ -1,0 +1,15 @@
+{
+  "users": [
+    {"username": "Bob", "email": "bob@bobmail.com"},
+    {"username": "Jane", "email": "jane@janemail.com"},
+    {"username": "Sam", "email": "sam@sammail.com"}
+  ],
+  "posts": [
+    {"title": "My Lunch", "contents": "My lunch was great", "user_id": 1},
+    {"title": "My Breakfast", "contents": "My breakfast was great", "user_id": 1},
+    {"title": "My Brunch", "contents": "My brunch was great", "user_id": 2},
+    {"title": "My Linner", "contents": "My linner was great", "user_id": 2},
+    {"title": "My Dinner", "contents": "My dinner was great", "user_id": 2},
+    {"title": "My Supper", "contents": "My supper was great", "user_id": 3}
+  ]
+}

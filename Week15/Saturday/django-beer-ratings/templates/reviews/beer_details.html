@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h4>{{ user }}</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Beer</th>
+      <th>Brewery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ beer.name }}</td>
+      <td>{{ beer.brewery }}</td>
+      <td><a href="{% url 'beer:update_beer' beer.id %}">Edit</a></td>
+      <td><a href="{% url 'beer:delete_beer' beer.id %}">Delete</a></td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>user</th>
+      <th>review</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for review in reviews %}
+    <tr>
+      <th>{{ review.user }}</th>
+      <th>{{ review.review }}</th>
+      {% if review.user.id == user.id %}
+      <th><a href="{% url 'beer:update_review' review.id %}">Edit</a></th>
+      <th><a href="{% url 'beer:delete_review' review.id %}">Delete</a></th>
+      {% endif %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% if user.id != none %}
+<a href="{% url 'beer:add_review' beer.id user.id %}">Add a review</a>
+{% endif %}
+{% endblock %}

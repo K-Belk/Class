@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container-fluid">
+<form method="post">{% csrf_token %}
+  {{ form|crispy }}
+  <input type="submit" value="Save">
+</form>
+{% if form.title.value != None %}
+
+<a href="{% url 'delete_post' object.category.id object.id %}">Delete</a>
+
+{% endif %}
+
+</div>
+{% endblock %}

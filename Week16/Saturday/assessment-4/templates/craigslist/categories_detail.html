@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+  <p>
+    <h3><a href="{% url 'update_category' category.id %}"><i class="bi bi-pencil-square"></i></a>
+      {{ category.name }}</h3>
+  </p>
+
+  <p>
+    <h4><a href="{% url 'add_post' category.id %}"><i class="bi bi-plus-square"></i></a> Posts</h4>
+  </p>
+</div>
+
+<ul class="list-group w-25 ms-3">
+  {% for post in posts %}
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">
+        <h5><a href="{% url 'post_detail' category_id=category.id post_id=post.id %}">{{ post.title }}</a></h5>
+      </div>
+      <div>{{ post.description|truncatewords:5 }}</div>
+    </div>
+  </li>
+  {% endfor %}
+
+</ul>
+
+{% endblock %}ˇˇ7

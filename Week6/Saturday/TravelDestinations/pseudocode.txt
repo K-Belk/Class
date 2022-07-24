@@ -1,0 +1,49 @@
+Story: Travel Package App (3 points)
+Detail: write a class that:
+  1. Gets a user's budget
+  2. Gets a user's destination based on budget
+  3. Displays a confirmation message to the user
+==============================================================
+
+
+What DATA do we need?
+-budget (float)
+-(from csv) destination/cost info [{dest: france , cost: 120}]
+-filtered_destinations
+
+Where does our DATA belong?
+-budget (INSTANCE)
+-destination/cost (CLASS)
+-filtered_destinations (INSTANCE)
+
+What METHODS do we need?
+-read_from_file
+-get_user_budget
+-filter_destinations_based_on_budget
+-display_filtered_destinations
+-get_user_destination
+-print_confirmation_message
+
+What do our METHODS do?
+-read_from_file
+  -open csv
+  -create list of dicts
+
+-get_user_budget
+  -use input
+  -input validation
+  -store as budget
+
+-filter_destinations_based_on_budget
+  -create a subset of destination/cost based on get_user_budget
+  -store as filtered_destinations
+
+-display_filtered_destinations
+  -print filtered_destinations
+
+-get_user_destination
+  - use input
+  - input validation
+
+-print_confirmation_message
+  -print final destination if valid

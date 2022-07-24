@@ -1,0 +1,11 @@
+Classes :
+  IceCream
+    - status : `:watery`, `:almost_ready`, `:ready`, `:freezer_burned`
+     - time in freezer
+  Flavors - subclasses of IceCream
+    - freezing time
+  Freezer
+    - adds IceCream to inventory
+    - check inventory
+      - removes when ready
+      - checks status

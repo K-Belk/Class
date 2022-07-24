@@ -1,0 +1,9 @@
+<h1>Blog Post</h1>
+{% if all_post %}
+  {% for post in all_post %}
+  <div><a href="{% url 'id_post' post_id=post.id %}"> {{ post.title }}</a></div>
+  <div>{{ post.body }}</div>
+  {% endfor %}
+{% else %}
+  <div>No post to show</div>
+{% endif %}

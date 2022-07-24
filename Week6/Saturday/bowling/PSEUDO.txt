@@ -1,0 +1,28 @@
+Classes -
+
+  - frame
+    - stores score for current frame
+    - scoring structure
+    - use random for the amount of pins knocked down
+    - know if it is a spare or strike
+      - spare variable
+      -strike variable
+
+  - player
+    - holds a frame class for each frame of 10
+    - calculate score
+
+  - game
+    - plays the game
+    - track how may frames are left
+    - Holds players
+      - variables
+    
+scoring
+
+ - if strike
+  - if there is a frame ahead
+    - frame[1] = sum of frame ahead
+  - return frame sum
+
+ - if spare

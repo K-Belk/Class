@@ -1,0 +1,26 @@
+[
+  {
+    "label": "OPINION",
+    "value": "opinion"
+  },
+  {
+    "label": "WORLD",
+    "value": "world"
+  },
+  {
+    "label": "NATIONAL",
+    "value": "national"
+  },
+  {
+    "label": "POLITICS",
+    "value": "politics"
+  },
+  {
+    "label": "UPSHOT",
+    "value": "upshot"
+  },
+  {
+    "label": "BUSINESS",
+    "value": "business"
+  }
+]

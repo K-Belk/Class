@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div>
+  <h1>{{ group }}</h1>
+  <p>group owner: {{ group.owner }}</p>
+  <p>group description: {{ group.description }}</p>
+  <p>group members: {{ members.name }}</p>
+</div>
+<div>
+  <a href="{% url 'meet:update_group' group.id %}">Edit</a>
+  <br>
+  <a href="{% url 'meet:delete_group' group.id %}">Delete</a>
+</div>
+<div>
+  <a href="{% url 'meet:add_event' group.id %}">Add an event</a>
+</div>
+<div>
+  {% for event in events %}
+  <p>{{ event }} <a href="{% url 'meet:edit_event' group_id=group.id event_id=event.id  %}">Edit</a><a href="{% url 'meet:delete_event' group_id=group.id event_id=event.id %}">Delete</a></p>
+  {% endfor %}
+</div>
+
+  {% endblock %}

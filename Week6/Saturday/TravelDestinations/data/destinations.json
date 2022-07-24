@@ -1,0 +1,8 @@
+{
+  "Destinations": [
+    {"Country": "Japan", "Cost": 1500},
+    {"Country": "Columbia", "Cost": 1100},
+    {"Country": "France", "Cost": 1300}
+  ]
+}
+
